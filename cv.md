@@ -16,7 +16,7 @@
 ---
 
 - 2008-2014 - work in Prosecutor's office in Kharkiv region
-- 08.2014-01.2016 - work in Joint-Stock Company "Bank Golden Gate"
+- 2014-2016 - work in Joint-Stock Company "Bank Golden Gate"
 - 2016-2018 - head of LLC «Arial consulting group»
 - 2018-till now - advocate
 - 2018-till now - entrepreneur car import, car selling
