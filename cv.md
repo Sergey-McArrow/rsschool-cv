@@ -1,6 +1,3 @@
-layout: cv
-title: Serhii Makarov's CV
-
 # Serhii Makarov
 
 ### learn Javascript in RS School
@@ -15,6 +12,8 @@ title: Serhii Makarov's CV
 - 2018 - study C#/.NET in It Cloud Academy
 
 ## **Experience**
+
+---
 
 - 2008-2014 - work in Prosecutor's office in Kharkiv region
 - 08.2014-01.2016 - work in Joint-Stock Company "Bank Golden Gate"
