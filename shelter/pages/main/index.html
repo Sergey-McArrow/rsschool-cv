@@ -1,67 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Shelter</title>
-    <link rel="stylesheet" href="style.css">
-    
-</head>
-<body>
-<div class="grid-container">
-   <header class="header">
-            <div class="header-flex">
-                <div class="header-logo">
-                    <img src="../../assets/icons/Logo.svg" alt="Logo">
-                    <p class="logo-description"></p>
-                </div>
-                <nav class="header-nav">
-                    <p class="nav">About the shelter</p>
-                    <p class="nav">Our pets</p>
-                    <p class="nav">Help the shelter</p>
-                    <p class="nav">Contacts</p>
-                </nav>
-            </div>
-    </header>
-
-    <div class="start-screen">Start Screen
-        
-        <div class="ss-grid">
-            <div class="ss-text">
-            <div class="heading">
-            Not only people need a house
-            </div>      
-            <div class="subheading">
-            We offer to give a chance to a little and nice puppy with an extremely wide and open heart. He or she will love you more
-            than anybody else in the world, you will see!
-            </div>   
-            <div class="button_primary">
-            </div>
-            <button class="btn pets">Learn more</button>
-            </div>
-            <div class="ss-img">
-                <img src="../../assets/images/start-screen-puppy.png" alt="puppy">
-            </div>
-            
-
-
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="bg-wrap">
+      <header class="container header-main">
+        <div class="header-logo">
+          <h1 class="logo">
+            <!-- <img src="../../assets/icons/Logo.svg" alt="Logo" /> -->
+          </h1>
         </div>
+        <nav>
+          <ul class="nav flex">
+            <li class="nav-item">About the shelter</li>
+            <li class="nav-item">Help the shelter</li>
+            <li class="nav-item">Our pets</li>
+            <li class="nav-item">Contacts</li>
+          </ul>
+        </nav>
+      </header>
+
+      <section id="start-screen">
+        <!-- Start Screen -->
+        <div class="container ss-main">
+          <div class="content">
+            <h1 class="heading">Not only people need a house</h1>
+            <p class="subheading">
+              We offer to give a chance to a little and nice puppy with an
+              extremely wide and open heart. He or she will love you more than
+              anybody else in the world, you will see!
+            </p>
+            <button class="btn-friend">Make a friend</button>
+          </div>
+          <div class="ss-img">
+            <img src="../../assets/images/start-screen-puppy.png" alt="puppy" />
+          </div>
+        </div>
+      </section>
     </div>
-    
-    <div class="about">About </div>
-    <div class="pets">Pets</div>
-    <div class="help">Help</div>
-    <div class="donation">Donation</div>
-    <div class="footer">Footer</div>
-</div>
 
+    <section id="about" class="about-content">
+      <div class="about-image">
+        <img src="../../assets/images/about-pets.png" alt="About Pets" />
+      </div>
+      <div class="content">
+        <h2 class="heading">About the shelter “Cozy House”</h2>
+        <p class="subheading">
+          Currently we have 121 dogs and 342 cats on our hands and statistics
+          show that only 20% of them will find a family. The others will
+          continue to live with us and will be waiting for a lucky chance to
+          become dearly loved.
+        </p>
+        <p class="subheading">
+          We feed our wards with the best food and make sure that they do not
+          get sick, feel comfortable (including psychologically) and well. We
+          are supported by 87 volunteers and 28 employees of various skill
+          levels. About 12% of the animals are taken by the shelter staff.
+          Taking care of the animals, they become attached to the pets and would
+          hardly ever leave them alone.
+        </p>
+      </div>
+    </section>
 
+    <section class="pets">Pets</section>
+    <section class="help">Help</section>
+    <section class="donation">Donation</section>
+    <footer class="footer">Footer</footer>
 
     <!--  katrin <div class="card">
         <img src="../../assets/images/pets-katrine.png" alt="katrine">
         <p class = "pet-name" > Katrine</p>
         <button class="btn pets">Learn more</button>  
     </div> -->
-</body>
+  </body>
 </html>
