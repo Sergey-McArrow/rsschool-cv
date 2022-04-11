@@ -8,6 +8,7 @@
 
 body {
   max-width: 1280px;
+  margin: 0 auto;
 }
 
 .bg-wrap {
@@ -56,7 +57,9 @@ $color-primary: #f1cdb3;
 %align-items-for-column {
   align-items: center;
 }
-
+.bg-wrap {
+  height: 908px;
+}
 .container {
   padding: 40px;
 }
@@ -86,14 +89,17 @@ $color-primary: #f1cdb3;
     order: 0;
     flex-grow: 0;
     margin: 10px 0px;
-    &:hover {
-      cursor: pointer;
-      //   text-decoration: underline $color-primary;
-      border-bottom: solid 3px $color-primary;
-    }
+
     .link {
       text-decoration: none;
       color: #fafafa;
+      &:hover {
+        cursor: pointer;
+        border-bottom: solid 3px $color-primary;
+      }
+    }
+    .active {
+      border-bottom: solid 3px $color-primary;
     }
   }
 }
@@ -109,8 +115,7 @@ $color-primary: #f1cdb3;
   align-items: center;
   padding-bottom: 0%;
   .content {
-    width: 460px;
-    height: 322px;
+    margin-top: -80px;
     .heading {
       font-family: "Georgia";
       font-style: normal;
@@ -124,6 +129,7 @@ $color-primary: #f1cdb3;
       color: #ffffff;
       width: 310px;
       height: 114px;
+      margin: -2px;
     }
     .subheading {
       @include ar-15();
@@ -131,6 +137,7 @@ $color-primary: #f1cdb3;
       padding-top: 20px;
       width: 460px;
       height: 72px;
+      margin-top: 20px;
     }
     .btn-friend {
       align-items: center;
@@ -158,23 +165,26 @@ $color-primary: #f1cdb3;
     }
   }
 }
-
-.about-content {
+.li {
+  text-decoration: none;
+  color: #292929;
+}
+content {
   display: flex;
-  //   justify-content: space-around;
-  width: 1200px;
-  height: 408px;
-  padding: 80px 40px 100px 40px;
+  justify-content: space-around;
+  padding-top: 80px;
+  align-items: flex-start;
+
   .about-image {
-    width: 600px;
-    height: 204px;
+    width: 50%;
+    position: relative;
+    left: 15%;
   }
 
   .content {
     @include flex-column();
     justify-content: space-between;
-    width: 430px;
-    height: 380px;
+    width: 50%;
 
     .heading {
       font-family: "Georgia";
@@ -183,11 +193,12 @@ $color-primary: #f1cdb3;
       font-size: 35px;
       line-height: 130%;
       color: #545454;
+      padding: 10px;
     }
     .subheading {
       @include ar-15();
-      width: 430px;
       color: #4c4c4c;
+      padding: 10px;
     }
   }
 }
@@ -201,8 +212,7 @@ $color-primary: #f1cdb3;
 .pets-content {
   @include flex-column();
   justify-content: space-between;
-  width: 1200px;
-  height: 697px;
+
   padding: 80px 40px 100px 40px;
   background: #f6f6f6;
   .heading {

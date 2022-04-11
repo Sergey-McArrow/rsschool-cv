@@ -27,12 +27,9 @@
   margin: 0;
 }
 
-section {
-  outline: 2px solid red;
-}
-
 body {
   max-width: 1280px;
+  margin: 0 auto;
 }
 
 .header-main {
@@ -109,14 +106,18 @@ body {
   margin: 10px 0px;
 }
 
-.header-main .nav-item:hover {
-  cursor: pointer;
-  border-bottom: solid 3px #f1cdb3;
-}
-
 .header-main .nav-item .link {
   text-decoration: none;
   color: #545454;
+}
+
+.header-main .nav-item .link:hover {
+  cursor: pointer;
+  color: #e9b188;
+}
+
+.active {
+  border-bottom: 3px solid #f1cdb3;
 }
 
 .pets .pets-content {
@@ -171,6 +172,18 @@ body {
   padding: 5px;
 }
 
+.pets .pets-content .cards_container .card .pet-name {
+  font-family: "Georgia";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 23px;
+  /* identical to box height */
+  letter-spacing: 0.06em;
+  /* color-dark-l */
+  color: #545454;
+}
+
 .pets .pets-content .cards_container .card .btn {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -197,7 +210,7 @@ body {
 
 .pets .pets-content .cards_container .card .btn:hover {
   cursor: pointer;
-  background-color: #d4d4d4;
+  background-color: #ededed;
 }
 
 .pets .pets-content .navigation {

@@ -40,39 +40,11 @@ $color-primary: #f1cdb3;
   padding: 0;
   margin: 0;
 }
-section {
-  outline: 2px solid red;
-}
 
 body {
   max-width: 1280px;
+  margin: 0 auto;
 }
-// .nav {
-//   &-item {
-//     padding: 10px;
-//     list-style: none;
-//     @include ar-15();
-//     padding: 20px;
-//     /* identical to box height, or 24px */
-//     text-decoration: none;
-//     /* color-light-s */
-//     color: #545454;
-//     /* Inside auto layout */
-//     flex: none;
-//     order: 0;
-//     flex-grow: 0;
-//     margin: 10px 0px;
-//     &:hover {
-//       cursor: pointer;
-//       //   text-decoration: underline $color-primary;
-//       border-bottom: solid 3px $color-primary;
-//     }
-//     .link {
-//       text-decoration: none;
-//       color: #fafafa;
-//     }
-//   }
-// }
 
 .header-main {
   display: flex;
@@ -128,19 +100,23 @@ body {
       order: 0;
       flex-grow: 0;
       margin: 10px 0px;
-      &:hover {
-        cursor: pointer;
-        //   text-decoration: underline $color-primary;
-        border-bottom: solid 3px $color-primary;
-      }
+
       .link {
         text-decoration: none;
         color: #545454;
+        &:hover {
+          cursor: pointer;
+          //   text-decoration: underline $color-primary;
+          color: darken($color-primary, 10%);
+        }
       }
     }
   }
 }
 
+.active {
+  border-bottom: 3px solid $color-primary;
+}
 .pets {
   .pets-content {
     @include flex-column();
@@ -166,6 +142,20 @@ body {
         @extend %align-items-for-column;
         justify-content: space-around;
         padding: 5px;
+        .pet-name {
+          font-family: "Georgia";
+          font-style: normal;
+          font-weight: 400;
+          font-size: 20px;
+          line-height: 23px;
+          /* identical to box height */
+
+          letter-spacing: 0.06em;
+
+          /* color-dark-l */
+
+          color: #545454;
+        }
         .btn {
           @include flex-column();
           align-items: center;
@@ -181,7 +171,7 @@ body {
           background: none;
           &:hover {
             cursor: pointer;
-            background-color: darken($card-background-color, 15%);
+            background-color: darken($card-background-color, 5%);
           }
         }
       }
