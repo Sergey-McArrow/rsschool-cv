@@ -1,6 +1,10 @@
-section {
-  outline: 2px solid red;
+* {
+  padding: 0;
+  margin: 0;
 }
+// section {
+//   outline: 2px solid red;
+// }
 
 body {
   max-width: 1280px;
@@ -11,11 +15,6 @@ body {
     radial-gradient(100% 215.42% at 0% 0%, #5b483a 0%, #262425 100%)
       /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */,
     #211f20;
-}
-
-* {
-  padding: 0;
-  margin: 0;
 }
 
 @font-face {
@@ -277,6 +276,7 @@ $bnt-color-hover: #ccc; //change color from asset
     display: flex;
     flex-direction: column;
     align-items: center;
+    align-self: center;
     padding: 15px 45px;
     padding: 15px 45px;
     background: #f1cdb3;
@@ -300,6 +300,188 @@ $bnt-color-hover: #ccc; //change color from asset
     // height: 52px;
     &:hover {
       background: darken($color: #f1cdb3, $amount: 15%);
+    }
+  }
+}
+
+.help-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 1200px;
+  height: 611px;
+  padding: 80px 40px 100px 40px;
+  background: #ffffff;
+  .heading {
+    font-family: "Georgia";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 35px;
+    line-height: 130%;
+    /* or 45px */
+
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    letter-spacing: 0.06em;
+
+    /* color-dark-l */
+
+    color: #545454;
+  }
+  .help-tbl {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 10px;
+
+    .help-item {
+      padding: 10px;
+      margin: 15px;
+      width: 150px;
+      height: 113px;
+      list-style: none;
+      display: flex;
+      flex-direction: column-reverse;
+      font-family: "Georgia";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 115%;
+      /* identical to box height, or 23px */
+
+      display: flex;
+      align-items: center;
+      text-align: center;
+      letter-spacing: 0.06em;
+
+      /* color-dark-l */
+
+      color: #545454;
+    }
+  }
+}
+.donation {
+  background: #f6f6f6;
+  height: 462px;
+  .donation-main {
+    display: flex;
+    align-items: center;
+    width: 915px;
+    height: 282px;
+    padding: 80px 183px 100px 182px;
+    .donation-image {
+      margin-right: 30px;
+    }
+    .donation-content {
+      padding-bottom: 20px;
+      .heading {
+        font-family: "Georgia";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 35px;
+        line-height: 130%;
+        padding-bottom: 10px;
+      }
+      .subheading {
+        font-family: "Georgia";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 110%;
+        color: #545454;
+        padding-bottom: 10px;
+      }
+      .credit-card {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        background: #f1cdb3;
+        border-radius: 9px;
+        width: 349px;
+        height: 43px;
+        padding: 10px 15px;
+
+        .num {
+          font-family: "Georgia";
+          font-style: normal;
+          font-weight: 400;
+          font-size: 20px;
+          line-height: 115%;
+          padding: 10px 15 px 10px 60px;
+        }
+      }
+      .legal-info {
+        font-family: "Arial";
+        font-style: italic;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 18px;
+        /* or 150% */
+
+        display: flex;
+        align-items: center;
+
+        /* color-dark-m */
+
+        color: #b2b2b2;
+        padding-top: 20px;
+      }
+    }
+  }
+}
+.footer {
+  background: url(noise_lines_transparent@2X.png),
+    radial-gradient(110.67% 538.64% at 5.73% 50%, #513d2f 0%, #1a1a1c 100%)
+      /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */,
+    #211f20;
+  height: 350px;
+  .content {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 40px;
+    .wrap {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: space-evenly;
+      padding: 20px;
+
+      .footer-text {
+        font-family: "Georgia";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 35px;
+        line-height: 130%;
+        /* or 45px */
+
+        letter-spacing: 0.06em;
+
+        /* color-light-xl */
+
+        color: #ffffff;
+      }
+      .contact {
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+        .footer-link {
+          font-family: "Georgia";
+          font-style: normal;
+          font-weight: 400;
+          font-size: 20px;
+          line-height: 115%;
+          /* identical to box height, or 23px */
+
+          letter-spacing: 0.06em;
+
+          /* color-primary */
+
+          color: #f1cdb3;
+          margin-left: 20px;
+        }
+      }
     }
   }
 }
