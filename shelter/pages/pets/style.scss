@@ -1,0 +1,270 @@
+@font-face {
+  font-family: "Arial";
+  src: url("../../assets/fonts/arial/arial-regular.ttf");
+  src: url("../../assets/fonts/arial/arial-black.ttf");
+  src: url("../../assets/fonts/arial/arial-bold-italic.ttf");
+  src: url("../../assets/fonts/arial/arial-bold.ttf");
+  src: url("../../assets/fonts/arial/arial-italic.ttf");
+  src: url("../../assets/fonts/arial/arial-narrow-bold-italic.ttf");
+  src: url("../../assets/fonts/arial/arial-narrow-bold.ttf");
+  src: url("../../assets/fonts/arial/arial-narrow-italic.ttf");
+  src: url("../../assets/fonts/arial/arial-narrow.ttf");
+
+  font-family: "Georgia";
+  src: url(../../assets/fonts/georgia/georgia-bold-italic.ttf);
+  src: url(../../assets/fonts/georgia/georgia-bold.ttf);
+  src: url(../../assets/fonts/georgia/georgia-italic.ttf);
+  src: url(../../assets/fonts/georgia/georgia-regular.ttf);
+}
+$card-background-color: #fafafa;
+$bnt-color-hover: #ccc; //change color from asset
+$color-primary: #f1cdb3;
+
+%align-items-for-column {
+  align-items: center;
+}
+@mixin flex-column() {
+  display: flex;
+  flex-direction: column;
+}
+
+@mixin ar-15() {
+  font-family: "Arial";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 160%;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+section {
+  outline: 2px solid red;
+}
+
+body {
+  max-width: 1280px;
+}
+// .nav {
+//   &-item {
+//     padding: 10px;
+//     list-style: none;
+//     @include ar-15();
+//     padding: 20px;
+//     /* identical to box height, or 24px */
+//     text-decoration: none;
+//     /* color-light-s */
+//     color: #545454;
+//     /* Inside auto layout */
+//     flex: none;
+//     order: 0;
+//     flex-grow: 0;
+//     margin: 10px 0px;
+//     &:hover {
+//       cursor: pointer;
+//       //   text-decoration: underline $color-primary;
+//       border-bottom: solid 3px $color-primary;
+//     }
+//     .link {
+//       text-decoration: none;
+//       color: #fafafa;
+//     }
+//   }
+// }
+
+.header-main {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 48px;
+  //   margin-bottom: -70px;
+  height: 120px;
+  margin-bottom: 80px;
+
+  //  margin-right: -219px;
+
+  .header-logo {
+    .logo {
+      margin-top: 13px;
+      font-family: "Georgia";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 32px;
+      line-height: 110%;
+      /* or 35px */
+      letter-spacing: 0.06em;
+      /* color-dark-l */
+      color: #545454;
+    }
+    .subtitle {
+      font-family: "Arial";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 13px;
+      line-height: 15px;
+      /* identical to box height */
+      display: flex;
+      align-items: center;
+      letter-spacing: 0.1em;
+      /* color-dark-3xl */
+      color: #292929;
+    }
+  }
+  .nav {
+    display: flex;
+    &-item {
+      padding: 10px;
+      list-style: none;
+      @include ar-15();
+      padding: 20px;
+      /* identical to box height, or 24px */
+      text-decoration: none;
+
+      /* color-light-s */
+      color: #545454;
+      /* Inside auto layout */
+      flex: none;
+      order: 0;
+      flex-grow: 0;
+      margin: 10px 0px;
+      &:hover {
+        cursor: pointer;
+        //   text-decoration: underline $color-primary;
+        border-bottom: solid 3px $color-primary;
+      }
+      .link {
+        text-decoration: none;
+        color: #545454;
+      }
+    }
+  }
+}
+
+.pets {
+  .pets-content {
+    @include flex-column();
+    align-items: center;
+    .heading {
+      font-family: "Georgia";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 35px;
+      line-height: 130%;
+      color: #545454;
+      align-self: center;
+    }
+    .cards_container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-evenly;
+      width: 1280px;
+      height: 1062px;
+      padding: 80px 40px 100px 40px;
+      .card {
+        @include flex-column();
+        @extend %align-items-for-column;
+        justify-content: space-around;
+        padding: 5px;
+        .btn {
+          @include flex-column();
+          align-items: center;
+          padding: 15px 45px;
+          width: 187px;
+          height: 52px;
+          /* color-primary */
+          border: 2px solid $color-primary;
+          box-sizing: border-box;
+          border-radius: 100px;
+          left: 41.5px;
+          top: 353px;
+          background: none;
+          &:hover {
+            cursor: pointer;
+            background-color: darken($card-background-color, 15%);
+          }
+        }
+      }
+    }
+    .navigation {
+      display: flex;
+      justify-content: space-around;
+      width: 340px;
+      align-self: center;
+      margin-bottom: 100px;
+      .btn-nav {
+        /* color-primary */
+        border: 2px solid $color-primary;
+        box-sizing: border-box;
+        border-radius: 100px;
+        width: 52px;
+        height: 52px;
+        background: none;
+      }
+      .inactive {
+        border: 2px solid #cdcdcd;
+      }
+      .active {
+        background: #f1cdb3;
+      }
+      .paginator {
+        border: 2px solid #f1cdb3;
+      }
+    }
+  }
+}
+
+.footer {
+  background: url(noise_lines_transparent@2X.png),
+    radial-gradient(110.67% 538.64% at 5.73% 50%, #513d2f 0%, #1a1a1c 100%)
+      /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */,
+    #211f20;
+  height: 350px;
+  .content {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 40px;
+    .wrap {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: space-evenly;
+      padding: 20px;
+
+      .footer-text {
+        font-family: "Georgia";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 35px;
+        line-height: 130%;
+        /* or 45px */
+
+        letter-spacing: 0.06em;
+
+        /* color-light-xl */
+
+        color: #ffffff;
+      }
+      .contact {
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+        .footer-link {
+          font-family: "Georgia";
+          font-style: normal;
+          font-weight: 400;
+          font-size: 20px;
+          line-height: 115%;
+          /* identical to box height, or 23px */
+
+          letter-spacing: 0.06em;
+
+          /* color-primary */
+
+          color: #f1cdb3;
+          margin-left: 20px;
+        }
+      }
+    }
+  }
+}
